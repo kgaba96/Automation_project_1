@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite" parallel="none">
+    <test name="Multiple Sites">
+        <classes>
+            <class name="Day12_060422.Boolean_With_Yahoo_Checkbox"/>
+            <class name="Day11_052922.googleBoolean_with_checkbox"/>
+            <class name="ActionItems.HealthPartners.US01_TC01toTC04"/>
+
+        </classes>
+    </test>
+</suite>
