@@ -221,7 +221,7 @@ public class HealthPartner {
     @Test(priority = 3)
     public void US03and04() throws InterruptedException {
         logger = reports.startTest("US04and06");
-        driver.navigate().to("https://www.healthpartners.com"); // navigate to website
+        driver.navigate().to("https://www.healthpartners.com/care/"); // navigate to website
 
         Reusable_Actions_Loggers_x.clickAction(driver, "//*[@class='icon-menu hidden-lg']", logger, "click on right navigation");
         Reusable_Actions_Loggers_x.ClickByIndexAction(driver, "//*[@class='nav-content']", 1, logger, "click on services");
@@ -273,6 +273,7 @@ public class HealthPartner {
         //click on the side menu
         Reusable_Actions_Loggers_x.clickAction(driver,"//*[@name='system-menu']",logger,"click on the side menu");
         //click on the side menu for all location
+
         driver.findElements(By.xpath("//*[text()='Our locations']")).get(1).click();
         Reusable_Actions_Loggers_x.clickAction(driver,"//*[text()='All locations']",logger,"click on the side menu for all location");
         Reusable_Actions_Loggers_x.clickAction(driver,"//*[@id='sort-medium-up']",logger,"click on sort location by");

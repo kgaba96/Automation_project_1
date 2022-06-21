@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.util.List;
 
 public class Reusable_Actions_POM_Loggers {
 
@@ -112,10 +113,10 @@ public class Reusable_Actions_POM_Loggers {
     }//end of getTextAction method
 
     //create a click by index method
-    public static void clickByIndexAction(WebDriver driver,String xpath, int indexNumber, String elementName){
+    public static void clickByIndexAction(WebDriver driver, List<WebElement> xpath, int indexNumber, ExtentTest logger, String elementName){
         WebDriverWait wait = new WebDriverWait(driver,timeout);
         try{
-            WebElement element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(xpath))).get(indexNumber);
+            WebElement element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy((By) xpath)).get(indexNumber);
             element.click();
         } catch (Exception e) {
             System.out.println("Unable to click on element " + elementName + " " + e);

@@ -53,7 +53,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2022-06-05 10:25:43</span>
+					<span class='suite-started-time'>2022-06-21 05:05:05</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -83,25 +83,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 0m 5s+790ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 2m 19s+252ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 0m 5s+790ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 2m 19s+252ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2022-06-05 10:25:38</span> 
+							<span class='panel-lead suite-started-time'>2022-06-21 05:02:46</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2022-06-05 10:25:43</span> 
+							<span class='panel-lead suite-ended-time'>2022-06-21 05:05:05</span> 
 						</div> 
 					</div>
 				</div>
@@ -237,17 +237,17 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active pass ' extentid='26352a93-778d-4c36-8aa5-dee6c1ba8b0d'>
+										<li class='collection-item test displayed active fail ' extentid='dbb1c86c-3525-4b61-9fbd-ca7eee7e38ac'>
 											<div class='test-head'>
-												<span class='test-name'>SearchForAKeywordOnGoogleHome </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='test-name'>searchDOC </span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
 												<span class='category-assigned hide '></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-06-05 10:25:38</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-06-05 10:25:43</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+699ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-06-21 05:02:47</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-06-21 05:05:04</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 2m 17s+873ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -264,55 +264,78 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:25:39</td>
-																	<td class='step-details'>Successfully enter user value on element Search Field</td>
+																	<td class='timestamp'>05:02:50</td>
+																	<td class='step-details'>Successfully clicked on OPen Nav</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>05:03:20</td>
+																	<td class='step-details'>Unable to click on element Clinics & hospitals org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Clinics & hospitals'' (tried for 30 second(s) with 500 milliseconds interval)</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>05:03:21</td>
+																	<td class='step-details'><a href='Screenshots//Clinics & hospitals.png' data-featherlight='image'><img class='report-img' src='Screenshots//Clinics & hospitals.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>05:03:52</td>
+																	<td class='step-details'>Unable to click on element click on right navigation care well org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@name='system-menu']' (tried for 30 second(s) with 500 milliseconds interval)</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>05:03:52</td>
+																	<td class='step-details'><a href='Screenshots//click on right navigation care well.png' data-featherlight='image'><img class='report-img' src='Screenshots//click on right navigation care well.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>05:04:23</td>
+																	<td class='step-details'>Unable to click on element click on search for all doctors org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='All doctors']' (tried for 30 second(s) with 500 milliseconds interval)</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>05:04:24</td>
+																	<td class='step-details'><a href='Screenshots//click on search for all doctors.png' data-featherlight='image'><img class='report-img' src='Screenshots//click on search for all doctors.png' /></a></td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:25:43</td>
-																	<td class='step-details'>Successfully submit on element Google Search Button</td>
+																	<td class='timestamp'>05:04:32</td>
+																	<td class='step-details'>Successfully clicked on click on specialty</td>
 																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='2cb5aed4-e768-49ce-b642-85bce490aff8'>
-											<div class='test-head'>
-												<span class='test-name'>CaptureSearchNumberFromGoogle </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-06-05 10:25:43</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-06-05 10:25:43</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+137ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:25:43</td>
-																	<td class='step-details'>Successfully capture text on element Search Results</td>
+																	<td class='timestamp'>05:04:32</td>
+																	<td class='step-details'>Successfully clicked on click on type of doctor</td>
 																</tr>
 																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:25:43</td>
-																	<td class='step-details'>My search number is 995,000,000</td>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>05:04:33</td>
+																	<td class='step-details'>Successfully clicked on click primary doc</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>05:04:33</td>
+																	<td class='step-details'>Successfully clicked on click on type of doc</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>05:04:34</td>
+																	<td class='step-details'>Successfully clicked on click on sort docs</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>05:04:34</td>
+																	<td class='step-details'>Successfully clicked on click on rating</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>05:05:04</td>
+																	<td class='step-details'>Unable to capture text on element capture text org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@class='header-container']' (tried for 30 second(s) with 500 milliseconds interval)</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>05:05:04</td>
+																	<td class='step-details'><a href='Screenshots//capture text.png' data-featherlight='image'><img class='report-img' src='Screenshots//capture text.png' /></a></td>
 																</tr>
 														</tbody>
 													</table>

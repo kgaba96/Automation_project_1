@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -40,7 +41,23 @@ public class US050994 {
         Reusable_Actions_Loggers_x.clickAction(driver,"//*[@name='system-menu']",logger,"click on the side menu");
         driver.findElements(By.xpath("//*[text()='Our locations']")).get(1).click();
         Reusable_Actions_Loggers_x.clickAction(driver,"//*[text()='All locations']",logger,"click on the side menu for all location");
-        Reusable_Actions_Loggers_x.clickAction(driver,"//*[@id='sort-medium-up']",logger,"click on sort location by");
+
+        Thread.sleep(3000);
+
+        Actions mouseActions = new Actions(driver);
+         driver.findElements(By.xpath("//*[@aria-label='clear search']")).get(0).click();
+        WebElement element = driver.findElements(By.xpath("//*[@id='doctor-geosearch']")).get(0);
+       element.click();
+        mouseActions.moveToElement(element).sendKeys("New York").perform();
+        driver.findElements(By.xpath("//*[@aria-label='search for ']")).get(0).click();
+       // element.submit();
+
+
+
+
+
+
+      /*  Reusable_Actions_Loggers_x.clickAction(driver,"//*[@id='sort-medium-up']",logger,"click on sort location by");
         Reusable_Actions_Loggers_x.clickAction(driver,"//*[text()='Wait times']",logger,"click on sort by wait time");
         //count locations result
         try {
@@ -63,7 +80,7 @@ public class US050994 {
             System.out.println("an error found");
             logger.log(LogStatus.FAIL, "Unable to get the info for locations " + "  " + e);
         }//end of catch and try
-
+*/
         reports.endTest(logger);
 
     }//method test number 4
